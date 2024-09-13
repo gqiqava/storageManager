@@ -2,6 +2,8 @@ import styles from "./pages.module.scss";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useNavigate } from "react-router-dom";
+
 import { useState } from "react";
 
 export default function Authorization() {
@@ -9,6 +11,12 @@ export default function Authorization() {
     username: "",
     password: "",
   });
+  const navigate = useNavigate();
+
+  const auth = () => {
+    console.log("auth");
+    navigate("/main");
+  };
 
   return (
     <div className={styles.authContainer}>
@@ -26,7 +34,7 @@ export default function Authorization() {
           >
             <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
           </svg>
-          <p>Company Name</p>
+          <p style={{ fontWeight: "700" }}>Company Name</p>
         </div>
         <div>
           <h2 style={{ marginBottom: "20px" }}>
@@ -70,7 +78,7 @@ export default function Authorization() {
           />
           <Button
             style={{ width: "100%", marginTop: "24px" }}
-            onClick={() => console.log(form)}
+            onClick={() => auth()}
           >
             Sign In
           </Button>

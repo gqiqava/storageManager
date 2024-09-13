@@ -1,0 +1,23 @@
+.authContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.authContetLeft {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #18181b;
+  padding: 30px;
+  border-right: 1px solid #27272a;
+}
+
+.authFormContainer {
+  flex: 3;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

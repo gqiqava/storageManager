@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export default function Dashboard() {
   const [cards, setCards] = useState([
@@ -17,18 +18,24 @@ export default function Dashboard() {
       description: "Card Description",
       content: "some content here",
       footer: "card footer",
+      func: () => console.log(12),
+      actionText: "+ Create New Bucket",
     },
     {
       title: "Usage",
       description: "Card Description",
       content: "some content here",
       footer: "card footer",
+      func: () => console.log(12),
+      actionText: "> Go to Analytics",
     },
     {
       title: "Total Objects",
       description: "Card Description",
       content: "some content here",
       footer: "card footer",
+      func: () => console.log(12),
+      actionText: "> Go to Object List",
     },
   ]);
 
@@ -49,7 +56,9 @@ export default function Dashboard() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p>Card Content</p>
+                <div>
+                  <Button onClick={card.func}>{card.actionText}</Button>
+                </div>
               </CardContent>
               {/* <CardFooter>
                 <p>Card Footer</p>
@@ -58,6 +67,7 @@ export default function Dashboard() {
           </div>
         ))}
       </div>
+      <div>asdasd</div>
     </div>
   );
 }

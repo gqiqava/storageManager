@@ -25,13 +25,19 @@ export default function Navigation() {
           >
             Buckets
           </TabsTrigger>
-          <TabsTrigger value="/main/profile">Profile</TabsTrigger>
+          <TabsTrigger
+            value="/main/profile"
+            onClick={() => navigate("/main/profile")}
+          >
+            Profile
+          </TabsTrigger>
           <TabsTrigger
             value="logout"
             onClick={() => navigate("/")}
             style={{
               color: "rgba(255, 0, 0, 0.85)",
               backgroundColor: "rgba(255, 0, 0, 0.15)",
+              marginLeft: "4px",
             }}
           >
             Log Out

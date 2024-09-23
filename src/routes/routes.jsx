@@ -2,34 +2,13 @@ import Authorization from "../pages/Authorization";
 import Landing from "@/pages/Landing";
 import Dashboard from "@/pages/Dashboard";
 import Buckets from "@/pages/Buckets";
+import Profile from "@/pages/Profile";
 import { Navigate } from "react-router-dom";
 
 export const routes = [
   {
     path: "/",
     element: <Authorization />,
-    // children: [
-    //   {
-    //     path: "criteria",
-    //     element: <Criteria />,
-    //   },
-    //   {
-    //     path: "stages",
-    //     element: <Stages />,
-    //   },
-    //   {
-    //     path: "Questionnaires",
-    //     element: <Questionnaires />,
-    //   },
-    //   {
-    //     path: "FollowUp",
-    //     element: <FollowUp />,
-    //   },
-    //   {
-    //     path: "",
-    //     element: <Navigate to="stages" replace />,
-    //   },
-    // ],
   },
   {
     path: "/main",
@@ -42,6 +21,10 @@ export const routes = [
       {
         path: "buckets",
         element: <Buckets />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
       },
       {
         path: "",

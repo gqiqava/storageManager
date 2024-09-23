@@ -33,5 +33,23 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
+}
+.logSwitch {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: 400;
+  color: #93939b;
+  cursor: pointer;
+}
+
+.bucketTable {
+  margin: 25px;
+}
+
+.tableHeader {
+  margin: 25px;
+  background-color: var(--border);
 }

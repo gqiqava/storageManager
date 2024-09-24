@@ -216,7 +216,7 @@ export default function Buckets() {
   });
 
   return (
-    <div style={{ margin: "0px 60px", minHeight: "90vh" }}>
+    <div style={{ margin: "0px 12.5vw", minHeight: "90vh" }}>
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter emails..."

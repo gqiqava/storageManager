@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Chart from "@/components/func/Chart";
 
 export default function Dashboard() {
   const [cards, setCards] = useState([
@@ -67,7 +68,11 @@ export default function Dashboard() {
           </div>
         ))}
       </div>
-      <div>asdasd</div>
+      <div
+        style={{ display: "flex", justifyContent: "center", marginTop: "16px" }}
+      >
+        <Chart></Chart>
+      </div>
     </div>
   );
 }
